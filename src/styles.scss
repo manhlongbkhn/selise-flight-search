@@ -1,1 +1,103 @@
-/* You can add global styles to this file, and also import other style files */
+/* variables */
+$white: #fff;
+
+
+/* styles */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: #eeeeee;
+}
+/* Helper classes */
+.block {
+  display: block;
+  &--important {
+    display: block !important;
+  }
+}
+.d-flex {
+  display: flex;
+}
+.flex-1 {
+  flex: 1;
+}
+/* padding */
+.p {
+  &-15 {
+    padding: 15px;
+  }
+  &l-15 {
+    padding-left: 15px;
+  }
+  &r-15 {
+    padding-right: 15px;
+  }
+
+  &lr- {
+    &0 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    &15 {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  &t-0 {
+      padding-top: 0;
+  }
+  &t-15 {
+      padding-top: 15px;
+  }
+  &tb-15 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+/* margin */
+.m {
+  &10 {
+    margin: 10px;
+  }
+  &l-10 {
+    margin-left: 10px;
+  }
+  &r-10 {
+    margin-right: 10px;
+  }
+  &b-20 {
+      margin-bottom: 20px;
+  }
+  &lr-auto {
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
+
+.full-width {
+  width: 100%;
+}
+
+/* .container {
+  width: 1280px;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+} */
+.sidebar {
+  width: 350px;
+  border-right: 1px solid #eee;
+  background-color:$white;
+}
+.flights-container {
+    background-color: $white;
+}

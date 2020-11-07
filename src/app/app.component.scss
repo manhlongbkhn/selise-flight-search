@@ -1,0 +1,18 @@
+.loader-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #3e3e3e61;
+  z-index: 100;
+  justify-content: center;
+  display: flex;
+  padding-top: 18px;
+}
+@media (max-width: 575px) {
+  .top-header-section {
+    // margin-left: 0;
+    // margin-right: 0;
+  }
+}
