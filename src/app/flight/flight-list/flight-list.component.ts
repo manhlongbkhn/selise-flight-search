@@ -38,4 +38,8 @@ export class FlightListComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     // this.dataSource.paginator = this.paginator;
   }
+  searchFilter() {
+    console.log('he');
+    debugger;
+  }
 }

@@ -1,3 +1,14 @@
+<!-- <div class="d-flex justify-content-end mb-20">
+    <div class="d-flex align-items-center">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" class="mr-10">filter_list</mat-icon> *
+    </div>
+    <mat-form-field appearance="fill" class="">
+        <input matInput placeholder="Search filter" ngModel
+            name="filterFlights" (keyup)="searchFilter()"> 
+    </mat-form-field>
+</div> -->
+
+
 <table mat-table mat-table  [dataSource]="flights" class="xmat-elevation-z8 full-width">
     <ng-container matColumnDef="AirlineName">
         <th mat-header-cell *matHeaderCellDef> Airlines </th>

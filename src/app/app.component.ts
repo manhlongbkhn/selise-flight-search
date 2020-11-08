@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 
-const API_URL = 'http://nmflightapi.azurewebsites.net/api/flight';
+const API_URL = 'https://nmflightapi.azurewebsites.net/api/flight';
 
 @Component({
   selector: 'app-root',
@@ -17,6 +17,7 @@ export class AppComponent {
 
   getFlightResults($evt) {
     this.loading = true;
+
     let params = new HttpParams()
       .set('DepartureAirportCode', $evt.DepartureAirportCode)
       .set('ArrivalAirportCode', $evt.ArrivalAirportCode)
