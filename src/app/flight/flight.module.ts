@@ -1,13 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-// import { MatSliderModule } from '@angular/material/slider';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
-import { MatTableDataSource, MatTableModule } from '@angular/material/table';
+import { MatTableModule } from '@angular/material/table';
 import { MatButtonModule } from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
 import { MatPaginatorModule } from '@angular/material/paginator';
@@ -19,7 +18,6 @@ import { FlightListComponent } from './flight-list/flight-list.component';
   declarations: [SearchComponent, FlightListComponent],
   imports: [
     CommonModule,
-    // MatSliderModule,
     MatFormFieldModule,
     MatInputModule,
     MatDatepickerModule,
@@ -27,7 +25,6 @@ import { FlightListComponent } from './flight-list/flight-list.component';
     MatListModule,
     MatIconModule,
     MatTableModule,
-    // MatTableDataSource,
     MatButtonModule,
     FormsModule,
     MatPaginatorModule

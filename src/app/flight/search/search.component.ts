@@ -1,13 +1,11 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 
-const API_URL = 'http://nmflightapi.azurewebsites.net/api/flight';
-
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.scss'],
 })
-export class SearchComponent  {
+export class SearchComponent {
   @Input() queries = {};
   @Output() onSearch: EventEmitter<object> = new EventEmitter<object>();
 
@@ -37,7 +35,7 @@ export class SearchComponent  {
     return value;
   }
   getFlightResults(form) {
-    if(!form.valid) {
+    if (!form.valid) {
       return;
     }
     this.queries = form.value;
