@@ -128,5 +128,8 @@
       }
     }
   },
-  "defaultProject": "selise-flight-search"
+  "defaultProject": "selise-flight-search",
+  "cli": {
+    "analytics": false
+  }
 }
